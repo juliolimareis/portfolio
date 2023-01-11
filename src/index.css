@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: personal-font;
+  src: url("http://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:wght@300;700&display=swap");
+}
+
+* {
+  font-family: personal-font;
+}
+
+.selection-title {
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+  text-decoration: "underline";
+  text-decoration-color: #525252;
+}
+
+.bio-selection {
+  padding-left: 3.4em;
+	text-ident: -3.4em;
+}
+
+.bio-year {
+  font-weight: bold;
+	margin-right: 1em;
+}
