@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation, } from "react-i18next";
 import Button from "../components/Button";
-import { ArrowBottom, } from "../components/icons";
+import { ArrowBottom, ArrowRight, } from "../components/icons";
 import { Link, } from "../components/Link";
 import MagicCard from "../components/MagicCard";
 import { P, } from "../components/P";
@@ -36,7 +36,7 @@ function Home(): JSX.Element {
 
       <div className="text-center mt-7">
         <Button className="pb-4">
-          Meus Projetos {"^"}
+          Meus Projetos <ArrowRight className="w-4 text-white ml-2"/>
         </Button>
       </div>
 
@@ -170,7 +170,7 @@ function Hero() {
             </b>
           </p>
 
-          <ArrowBottom className="w-20 text-white animate-bounce m-auto mt-4" />
+          <ArrowBottom className="w-20 text-white animate-bounce m-auto mt-5" />
 
         </div>
 
@@ -247,7 +247,3 @@ function Perfil(props: { imageUrl: string, personName: string, personEmail: stri
 }
 
 export default Home;
-function styled(arg0: string) {
-  throw new Error("Function not implemented.");
-}
-
