@@ -3,9 +3,7 @@ import useTheme, { ThemeType, } from "../hooks/useTheme";
 import Button from "./Button";
 import { MoonStar, Sun, } from "./icons";
 import LinkItem from "./LinkItem";
-import "../css/neon.css";
 import { useTranslation, } from "react-i18next";
-import { Link, } from "./Link";
 import { NavLink, } from "react-router-dom";
 
 export default function Navbar(): JSX.Element {
@@ -70,7 +68,7 @@ export default function Navbar(): JSX.Element {
           </LinkItem>
         </div>
 
-        <Button className="m-1 bg-inherit dark:bg-inherit" title="Alterar Tema" onClick={themeSwitch}>
+        <Button title="Alterar Tema" onClick={themeSwitch}>
           {themeSelect === "dark" ? <Sun/> : <MoonStar/>}
         </Button>
 
