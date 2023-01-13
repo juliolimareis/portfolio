@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
+import "./css/neon.css";
+
 import App from "./App";
 
 import "./libs/i18";
