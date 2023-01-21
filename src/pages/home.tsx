@@ -80,10 +80,10 @@ function Intro(){
   const { t } = useLocale();
 
   return (
-    <div className="mt-3">
+    <div className="mt-3 p-2">
       <Title>{t.about}</Title>
 
-      <P className="pb-3">
+      <P className="mt-3 mb-3">
         {t.graduated}
       </P>
 

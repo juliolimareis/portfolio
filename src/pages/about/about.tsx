@@ -29,7 +29,7 @@ export default function About(): JSX.Element {
         </P>
       </P>
 
-      <P>
+      <P className="mt-2">
         <b>
           {t.questionAbout}
         </b>
@@ -38,7 +38,7 @@ export default function About(): JSX.Element {
         </P>
       </P>
 
-      <P>
+      <P className="mt-2">
         <b>
           {t.questionDevStrategies}
         </b>
@@ -47,7 +47,7 @@ export default function About(): JSX.Element {
         </P>
       </P>
 
-      <P>
+      <P className="mt-2">
         <b>
           {t.questionDoYouLikeWorking}
         </b>
@@ -56,7 +56,7 @@ export default function About(): JSX.Element {
         </P>
       </P>
 
-      <P>
+      <P className="mt-2">
         <b>
           {t.questionTechnologyExperience}
         </b>
