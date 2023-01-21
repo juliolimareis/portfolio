@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+    @apply text-primary
+  }
+}
+
 @font-face {
   font-family: personal-font;
   src: url("http://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:wght@300;700&display=swap");
@@ -23,7 +29,6 @@
 
 .bio-selection {
   padding-left: 3.4em;
-	text-ident: -3.4em;
 }
 
 .bio-year {

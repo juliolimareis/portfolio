@@ -22,6 +22,12 @@
   box-sizing: border-box;
 } */
 
+.night{ 
+  background: radial-gradient( to bottom right,rgba(63,81,181,1) 0%, rgb(93, 177, 226) 20%,rgba(171,71,188 ,1) 70%);
+  /* box-shadow: 1px 1px 30px rgba(81,45,168 ,1); */
+  /* color: linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%); */
+}
+
 
 .card {
   /* background-color: rgba(8, 8, 8, 0.24); */
@@ -84,3 +90,19 @@
     --rotate: 360deg;
   }
 }
+
+/* @-webkit-keyframes Animation {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+} */

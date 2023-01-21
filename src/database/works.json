@@ -1,0 +1,71 @@
+[
+	{
+		"id": "api-photo-slide",
+		"title": "API Photo Slide",
+		"description": "API for uploading images",
+		"github": "https://github.com/juliolimareis/photo-slide/tree/master/api",
+		"date": "2022",
+		"images": [
+			"/images/works/api-photo-slide.png",
+			"/images/works/api-photo-slide_02.png"
+		]
+	},
+	{
+		"id": "photo-slide",
+		"title": "Front Photo Slide",
+		"description": "A simple photo slide front-end",
+		"github": "https://github.com/juliolimareis/photo-slide/tree/master/front",
+		"date": "2022",
+		"images": [
+			"/images/works/photo-slide.png",
+			"/images/works/photo-slide_02.png",
+			"/images/works/photo-slide_03.png"
+		]
+	},
+	{
+		"id": "mcti-inma",
+		"title": "Mcti INMA",
+		"description": "Website project Atlantic Forest Sharing Network of Espírito Santo (MCTI INMA)",
+		"github": "https://github.com/mcti-inma/Site",
+		"date": "2020",
+		"images": [
+			"/images/works/mcti-inma.png",
+			"/images/works/mcti-inma_02.png"
+		]
+	},
+	{
+		"id": "poke-hunter-adventure",
+		"title": "Poke Hunter Adventure",
+		"description": "RPG online game",
+		"github": null,
+		"date": "2021",
+		"images": [
+			"/images/works/poke-hunter-adventure_02.png",
+			"/images/works/poke-hunter-adventure_03.png",
+			"/images/works/poke-hunter-adventure.png"
+		]
+	},
+	{
+		"id": "company-website",
+		"title": "Company Website",
+		"description": "Company Website Portfolio",
+		"github": null,
+		"date": "2020",
+		"images": [
+			"/images/works/iario.png",
+			"/images/works/iario_02.png"
+		]
+	},
+	{
+		"id": "online-store",
+		"title": "Online Store",
+		"description": "Online Store",
+		"github": null,
+		"date": "2020",
+		"images": [
+			"/images/works/store.png",
+			"/images/works/store_02.png",
+			"/images/works/store_03.png"
+		]
+	}
+]
