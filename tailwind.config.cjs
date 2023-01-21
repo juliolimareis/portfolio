@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       // backgroundImage: { "hero-cover": "url('assets/images/cover-2.webp')" },
       backgroundImage: {
-        "hero-cover": "url('assets/images/cover-neon.jpg')",
+        "hero-cover": "url('/images/cover-neon.jpg')",
         "neon": `linear-gradient(
           var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2, #696bb8, #b262af
         )`,

@@ -12,9 +12,11 @@ export default function LinkItem({ to, children, target }: LinkItemProps):JSX.El
     py-2
     px-4
     text-xl
+    text-black
+    dark:text-white
     hover:underline
     hover:text-primary
-    -dark:hover:text-second
+    dark:hover:text-primary
     transition duration-300
     rounded
   `;
@@ -27,7 +29,7 @@ export default function LinkItem({ to, children, target }: LinkItemProps):JSX.El
       //   return { color: isActive ? "glass-teal" : "inherit" };
       // }}
       className={({ isActive }) => {
-        return isActive ? `${classes} bg-primary hover:text-white` : classes;
+        return isActive ? `${classes} text-primary` : classes;
       }}
     >
       {children}

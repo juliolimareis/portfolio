@@ -4,8 +4,8 @@ type PProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLParagraphElement>
 
 export function P(props: PProps): JSX.Element {
   return (
-    <p className={"text-justify ".concat(props.className ?? "")}>
+    <div className={"text-justify ".concat(props.className ?? "")}>
       {props.children}
-    </p>
+    </div>
   );
 }

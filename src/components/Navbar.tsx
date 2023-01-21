@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState, } from "react";
 import useTheme, { ThemeType, } from "../hooks/useTheme";
 import Button from "./Button";
 import { MoonStar, Sun, } from "./icons";
 import LinkItem from "./LinkItem";
 import { useTranslation, } from "react-i18next";
 import { NavLink, } from "react-router-dom";
+import { Link, } from "./Link";
 
 export default function Navbar(): JSX.Element {
-  const { t } = useTranslation(); //i18n.changeLanguage('en-US');
+  const { t } = useTranslation();
   const { switchTheme } = useTheme();
-  const [themeSelect, setThemeSelect] = React.useState<ThemeType>("light");
+  const [themeSelect, setThemeSelect] = useState<ThemeType>("light");
 
   function themeSwitch(){
     const themeName = switchTheme();
@@ -20,27 +21,27 @@ export default function Navbar(): JSX.Element {
   return (
     <nav
       className="
-        dark:text-white
+      dark:text-white
         fixed
         w-full
-        z-1
+        z-10
         pl-3
-        bg-grey-transparent
-        dark:bg-black-transparent
-        font-bold"
+      bg-grey-transparent
+      dark:bg-black-transparent
+        font-bold
+      "
       style={{ backdropFilter: "blur(10px)" }}
     >
       <div className="container flex m-auto">
-
         <div className="flex pt-1">
           <NavLink
             className="
-            text-xl
-            font-bold
-            pt-2
-          text-black
-          dark:text-white
-            mr-3"
+              text-xl
+              font-bold
+              pt-2
+            text-black
+            dark:text-white
+              mr-3"
             to={"/"}
           >
             Júlio César Lima Reis
@@ -61,15 +62,28 @@ export default function Navbar(): JSX.Element {
           <LinkItem to="/posts">
             Posts
           </LinkItem>
-          <LinkItem to={{ pathname: "https://www.linkedin.com/in/julio-cesar-lima-reis-a8246215b/" }}
-            target="_blank"
+          <Link
+            target={"_blank"}
+            href="https://www.linkedin.com/in/julio-cesar-lima-reis-a8246215b/"
+            className={`
+              py-2
+              px-4
+              text-xl
+              hover:underline
+            hover:text-primary
+            dark:hover:text-primary
+              transition duration-300
+              rounded
+            text-black
+            dark:text-white
+            `}
           >
             LinkedIn
-          </LinkItem>
+          </Link>
         </div>
 
-        <Button title="Alterar Tema" onClick={themeSwitch}>
-          {themeSelect === "dark" ? <Sun/> : <MoonStar/>}
+        <Button title={t("Alterar Tema") ?? ""} onClick={themeSwitch}>
+          {themeSelect === "dark" ? <Sun className="w-5"/> : "80s"}
         </Button>
 
       </div>

@@ -27,6 +27,7 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "react-hooks/exhaustive-deps": "off",
     "@typescript-eslint/no-invalid-void-type": "warn",
     // "allowAsThisParameter": false,
     "react/prop-types": 0,

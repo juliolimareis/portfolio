@@ -4,7 +4,7 @@ type ButtonProps = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButton
 
 export default function Button(props: ButtonProps): JSX.Element {
   return (
-    <button className="
+    <span className="
       p-1
       dark:bg-neon
       rounded
@@ -31,13 +31,12 @@ export default function Button(props: ButtonProps): JSX.Element {
           duration-300
           py-3
           px-5
-          ${props.className}
           -bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500
           -night
-        `}
+        `.concat("", props.className ?? "")}
       >
         {props.children}
       </button>
-    </button>
+    </span>
   );
 }
