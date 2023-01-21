@@ -11,7 +11,6 @@ export default function FrontEnd(): JSX.Element {
     <Layout className="pl-12" title="Front-End">
       <SkillTitle name='Flutter' years='2018' level={4} color='#54c4f8'>
         <ArrowDesc>{t.fFlutter1}</ArrowDesc>
-        <ArrowDesc>{t.fFlutter1}</ArrowDesc>
         <ArrowDesc>{t.fFlutter2}</ArrowDesc>
         <ArrowDesc>{t.fFlutter3}</ArrowDesc>
         <ArrowDesc>{t.fFlutter4}</ArrowDesc>
