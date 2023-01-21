@@ -1,6 +1,5 @@
 import React from "react";
 import HTMLReactParser from "html-react-parser";
-import { useTranslation, } from "react-i18next";
 import { useNavigate, } from "react-router-dom";
 import Button from "../components/Button";
 import { ArrowBottom, ArrowRight, Github, LinkedIn, } from "../components/icons";
@@ -96,7 +95,7 @@ function Intro(){
 }
 
 function Hero() {
-  const { t } = useTranslation();
+  const { t } = useLocale();
 
   return (
     <div>
@@ -124,7 +123,7 @@ function Hero() {
           </p>
           <p className="text-white text-xl text-center p-2">
             <b>
-              {t("Analista de sistemas, Desenvolvedor, Full Stack, Programador")}
+              {t.dev}
             </b>
           </p>
 
