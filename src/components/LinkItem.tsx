@@ -5,13 +5,12 @@ interface LinkItemProps {
   to: To;
   children: React.ReactNode;
   target?: HTMLAttributeAnchorTarget
+  className?: string;
 }
 
-export default function LinkItem({ to, children, target }: LinkItemProps):JSX.Element {
+export default function LinkItem({ to, children, target, className }: LinkItemProps):JSX.Element {
   const classes = `
-    py-2
-    px-4
-    text-xl
+    text-[16px]
     text-black
     dark:text-white
     hover:underline
@@ -19,7 +18,7 @@ export default function LinkItem({ to, children, target }: LinkItemProps):JSX.El
     dark:hover:text-primary
     transition duration-300
     rounded
-  `;
+  `.concat(" ", className ?? "");
 
   return (
     <NavLink
