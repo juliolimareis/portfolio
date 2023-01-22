@@ -4,14 +4,17 @@ type ButtonProps = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButton
 
 export default function Button(props: ButtonProps): JSX.Element {
   return (
-    <span className="
-      p-1
-      dark:bg-neon
-      rounded
-      inline-flex
-      items-center
-      dark:animate-spin-slow
-    ">
+    <span
+      className="
+        p-1
+        dark:bg-neon
+        rounded
+        inline-flex
+        items-center
+        dark:animate-spin-slow
+      "
+      style={props.style}
+    >
       <button
         {...props}
         className={`
